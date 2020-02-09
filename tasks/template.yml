@@ -1,0 +1,10 @@
+---
+# Template configuration files for tuned
+
+- name: template is copied
+  template:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+  become: true
+  loop: "{{ tuned_templates_copy }}"
+  when: tuned_copy_templates

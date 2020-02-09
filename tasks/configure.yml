@@ -1,0 +1,11 @@
+---
+# Configure tuned
+
+- name: service is enabled and started
+  service:
+    name: "{{ item }}"
+    enabled: true
+    state: started
+  become: true
+  loop: "{{ tuned_services_enable }}"
+  when: tuned_enable_service
