@@ -8,10 +8,10 @@ tuned: Tuned
 Ansible galaxy:
 ---------------
 
-[https://galaxy.ansible.com/devops-toolbox.tuned](https://galaxy.ansible.com/devops-toolbox.tuned)
+[https://galaxy.ansible.com/devopstoolbox.tuned](https://galaxy.ansible.com/devopstoolbox.tuned)
 
 ```bash
-ansible-galaxy install devops-toolbox.tuned
+ansible-galaxy install devopstoolbox.tuned
 ```
 
 Requirements
@@ -60,7 +60,7 @@ Example Playbook
   tasks:
     - name: tuned is configured
       import_role:
-        name: devops-toolbox.tuned
+        name: devopstoolbox.tuned
       vars:
         tuned_packages_state: present
         tuned_remove_packages: true
@@ -89,4 +89,4 @@ MIT
 Author Information
 ------------------
 
-- [Mihai Criveti](https://www.linkedin.com/in/devops-toolbox.)
+- [Mihai Criveti](https://www.linkedin.com/in/devopstoolbox.)
